@@ -1,0 +1,105 @@
+/*
+    This CSS file provides a modern, frosted glass look for the website.
+    It uses a background image on the body and the `backdrop-filter` property
+    to create the unique frosted effect on the content sections.
+*/
+
+/* Basic setup and font styles for the entire page */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text for better contrast on the dark, blurred background */
+}
+
+/* Styles for the header section at the top of the page */
+header {
+    background: rgba(0, 0, 0, 0.4); /* A semi-transparent dark background */
+    backdrop-filter: blur(5px); /* The magic! Blurs the background image behind this element */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Styles for the main content area */
+main {
+    padding: 2rem;
+    max-width: 800px; /* Limits the content width for readability */
+    margin: auto; /* Centers the content on the page */
+}
+
+/* Styles for each section (the "cards") */
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    /* Frosted Glass Effect */
+    background: rgba(255, 255, 255, 0.2); /* A slightly transparent white background for the card */
+    backdrop-filter: blur(10px); /* Blurs what's behind the card */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* A subtle white border to define the card */
+}
+
+/* Styles for the section headings */
+h2 {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.5rem;
+}
+
+/* Styles for the command table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* White borders for the table cells */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly darker header for the table */
+}
+
+/* Styles for the "Invite" button */
+.button {
+    display: inline-block;
+    background: #7289da; /* Discord's purple/blue color */
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+}
+
+.button:hover {
+    background: #5b6eae; /* Darker shade of blue on hover */
+}
+
+/* Styles for the footer section at the bottom of the page */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #fff;
+    margin-top: 2rem;
+}
+
